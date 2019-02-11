@@ -15,15 +15,16 @@ function below and check the console to see if the test passes.*/
 // Write your code here
 var a = 4;
 var b = 7;
+var sum = test_sum(a, b);
 function test_sum(a, b) {
-  var result_sum = a + b;
-  var result_string = 'the sum of ' + a + ' and ' + b + ' is ' + result_sum + ' .';
-  return [result_sum, result_string];
+  var sum = a + b;
+  var result_string = 'the sum of ' + a + ' and ' + b + ' is ' + sum + ' .';
+  return [sum, result_string];
 }
 
 test_sum(a, b);
-console.log(a + b);
-console.log('the sum of ' + a + ' and ' + b + ' is ' + (a + b) + ' .');
+console.log(sum);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code
 //between GitHub and your laptop.
