@@ -23,6 +23,7 @@ function test_sum(a, b) {
 
 test_sum(a, b);
 console.log(a + b);
+console.log('the sum of ' + a + ' and ' + b + ' is ' + (a + b) + ' .');
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code
 //between GitHub and your laptop.
