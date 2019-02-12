@@ -13,19 +13,15 @@ and when you think it is finished, uncomment the call for the testSum()
 function below and check the console to see if the test passes.*/
 
 // Write your code here
-var a = 4;
-var b = 7;
-var sum = test_sum(a, b);
-function test_sum(a, b) {
-  var sum = a + b;
-  var result_string = 'the sum of ' + a + ' and ' + b + ' is ' + sum + ' .';
-  return [sum, result_string];
+function sum(a, b) {
+  var resultSum = a + b;
+  var resultString = 'The sum of ' + a + ' and ' + b + ' is ' + resultSum + '.';
+  return [resultSum, resultString];
 }
 
-test_sum(a, b);
-console.log(sum);
-
-
+// Here is the test for sum(); uncomment it to run it
+testSum(4, 7);
+console.log(testSum);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code
 //between GitHub and your laptop.
 //Don't forget to create a new branch for your work on the next question!
@@ -80,6 +76,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
+
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
