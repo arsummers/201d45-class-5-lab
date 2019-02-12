@@ -58,12 +58,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
+//hint: sum(a, sum(b,c)
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  var resultSum = sum(a, b, c);
+  var resultSumString = a + ' and ' + b + '  and ' + 5 + ' sum to ' + resultSum + '.';
+  var resultProduct = multiply(a, b, c);
+  var resultProductString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + resultProduct + '.';
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+
+//logging sumAndMultiply to the console only gets me the text inside the function. Not sure what else to try logging,
+//since the console log doesn't like being inside a function, and it won't recognize the variables only local
+//to the function. left it up for testing. testSumAndMultiply(); isn't even running for me.
+console.log (sumAndMultiply);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
